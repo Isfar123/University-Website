@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation Finder - Bashundhara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar Section (Integrated from home.html) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="contact.html">Contact Us</a></li> 
+                <li><a href="study.html">Study</a></li> 
+                <li><a href="homefinder.html">Accommodation</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Find Your Perfect Home in Bashundhara</h1>
+
+    <!-- Search Filters Section -->
+    <section class="search-filters">
+        <h2>Search Filters</h2>
+        <form>
+            <div class="filter-item">
+                <label for="block">Select Block:</label>
+                <select id="block" name="block">
+                    <option value="i-block">I Block</option>
+                    <option value="j-block">J Block</option>
+                    <option value="k-block">K Block</option>
+                    <option value="l-block">L Block</option>
+                </select>
+            </div>
+
+            <div class="filter-item">
+                <label for="price">Price Range:</label>
+                <input type="range" id="price" name="price" min="5000" max="50000" step="1000">
+            </div>
+
+            <div class="filter-item">
+                <label for="facilities">Facilities:</label>
+                <input type="checkbox" id="wifi" name="facilities" value="wifi"> Wi-Fi
+                <input type="checkbox" id="ac" name="facilities" value="ac"> Air Conditioning
+                <input type="checkbox" id="gym" name="facilities" value="gym"> Gym
+                <input type="checkbox" id="iubpersonal" name="facilities" value="iubpersonal"> Iub Personal
+            </div>
+
+            <div class="filter-item">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Available Accommodations Section -->
+    <section class="accommodation-cards">
+        <h2>Available Accommodations</h2>
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="h1.jpg" alt="I Block Accommodation">
+                <h3>I Block</h3>
+                <p>Rent: $10,000/month</p>
+                <p>Facilities: Wi-Fi, Air Conditioning, Gym</p>
+                <p>Commute Time: 15 mins to University</p>
+                
+                <!-- User Reviews & Ratings -->
+                <div class="reviews">
+                    <span>Rating: ★★★★☆ (4/5)</span>
+                    <p>"Great place to live! The facilities are top-notch."</p>
+                    <p>- John Doe</p>
+                </div>
+                
+                <button class="see-more">See More</button>
+                <button class="contact">Contact Landlord</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="h2.jpeg" alt="J Block Accommodation">
+                <h3>J Block</h3>
+                <p>Rent: $12,000/month</p>
+                <p>Facilities: Wi-Fi, Air Conditioning</p>
+                <p>Commute Time: 20 mins to University</p>
+                
+                <!-- User Reviews & Ratings -->
+                <div class="reviews">
+                    <span>Rating: ★★★☆☆ (3/5)</span>
+                    <p>"Decent accommodation, but a bit noisy at night."</p>
+                    <p>- Jane Smith</p>
+                </div>
+                
+                <button class="see-more">See More</button>
+                <button class="contact">Contact Landlord</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="h3.jpg" alt="K Block Accommodation">
+                <h3>K Block</h3>
+                <p>Rent: $15,000/month</p>
+                <p>Facilities: Gym, Wi-Fi</p>
+                <p>Commute Time: 10 mins to University</p>
+                
+                <!-- User Reviews & Ratings -->
+                <div class="reviews">
+                    <span>Rating: ★★★★★ (5/5)</span>
+                    <p>"Perfect spot for students, highly recommend!"</p>
+                    <p>- Alice Brown</p>
+                </div>
+                
+                <button class="see-more">See More</button>
+                <button class="contact">Contact Landlord</button>
+            </div>
+        </div>
+    </section>
+    <!-- Dummy Comparison Section -->
+<section class="comparison-section">
+    <h2>Compare Properties</h2>
+    <div class="comparison-container">
+        <!-- Comparison Card 1 -->
+        <div class="comparison-card">
+            <h3>I Block</h3>
+            <p><strong>Rent:</strong> $10,000/month</p>
+            <p><strong>Facilities:</strong> Wi-Fi, Air Conditioning, Gym</p>
+            <p><strong>Commute Time:</strong> 15 mins to University</p>
+            <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
+        </div>
+
+        <!-- Comparison Card 2 -->
+        <div class="comparison-card">
+            <h3>J Block</h3>
+            <p><strong>Rent:</strong> $12,000/month</p>
+            <p><strong>Facilities:</strong> Wi-Fi, Air Conditioning</p>
+            <p><strong>Commute Time:</strong> 20 mins to University</p>
+            <p><strong>Rating:</strong> ★★★☆☆ (3/5)</p>
+        </div>
+
+        <!-- Comparison Card 3 -->
+        <div class="comparison-card">
+            <h3>K Block</h3>
+            <p><strong>Rent:</strong> $15,000/month</p>
+            <p><strong>Facilities:</strong> Gym, Wi-Fi</p>
+            <p><strong>Commute Time:</strong> 10 mins to University</p>
+            <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section (Integrated from home.html) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Independent University, Bangladesh</p>
+                <p>House 16, Road 1, Block B,</p>
+                <p>Banani, Dhaka-1213, Bangladesh</p>
+                <p>Phone: +880 2 982 3344</p>
+                <p>Email: info@iub.edu.bd</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="study.html">Academic Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2024 Independent University, Bangladesh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

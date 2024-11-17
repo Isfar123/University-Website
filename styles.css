@@ -1,0 +1,1375 @@
+/* Header Styling */
+header {
+    background-image: url('university.jpeg');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image in the header */
+    height: 300px; /* Sets a height for the header */
+    width: 100%;
+    color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px; /* Adds space below the header */
+}
+
+nav {
+    position: absolute;
+    top: 20px; /* Adjusts the navbar position from the top */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the items */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 25px; /* Increased margin for more spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0b2a47;
+    font-size: 24px; /* Increased font size for bigger text */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+/* Navbar Active Link */
+nav ul li a.active {
+    font-weight: bold;
+    color: #FF6347; /* Change this to your preferred color */
+}
+
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+    color: white;
+}
+
+/* Logo Styling (Positioning logo at top left and making it larger) */
+nav .logo {
+    position: absolute;
+    left: 20px; /* Positions the logo 20px from the left */
+    top: 10px; /* Positions the logo 10px from the top */
+    height: 80px; /* Increased height of the logo */
+    width: auto; /* Maintains the aspect ratio */
+}
+
+/* Search Bar Section */
+.search-container {
+    text-align: center;
+    margin-top: 30px; /* Adds space between the header and the search bar */
+    margin-bottom: 60px; /* Adds more space below the search bar */
+}
+
+/* Layout for logo beside search bar */
+.logo-and-search {
+    display: flex; /* Flexbox layout */
+    justify-content: center;
+    align-items: center;
+}
+
+.search-logo {
+    height: 60px; /* Resize the logo to fit nicely next to the search bar */
+    margin-right: 20px; /* Adds space between the logo and the search bar */
+}
+
+.search-bar {
+    width: 50%; /* Makes the search bar wide */
+    padding: 15px; /* Increases the padding for a larger input field */
+    font-size: 18px; /* Larger font for readability */
+    border: 2px solid #ccc; /* Adds a border to the search bar */
+    border-radius: 25px; /* Rounded corners for the search bar */
+    outline: none; /* Removes the default outline */
+    transition: border 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #007bff; /* Changes the border color when the search bar is focused */
+}
+
+.search-button {
+    padding: 15px 25px; /* Adds padding to the search button */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    font-size: 18px; /* Increases the font size */
+    border: none; /* Removes the default border */
+    border-radius: 25px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes cursor to pointer */
+    margin-left: 10px; /* Adds space between the search bar and button */
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Darker blue when hovering over the button */
+}
+
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Programs Container */
+.programs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the flex items */
+    gap: 30px; /* Space between program cards */
+    margin: 50px 0;
+}
+
+/* Program Card Styling */
+.program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the contents inside the card */
+    justify-content: space-between;
+    width: 250px; /* Set a width for each card */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on program cards */
+.program-card:hover {
+    transform: translateY(-10px); /* Lifts the card slightly when hovered */
+}
+
+/* Program Image */
+.program-image {
+    width: 100%;
+    height: 150px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the box without distorting */
+    border-radius: 8px;
+}
+
+/* Program Title */
+.program-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* "See More" Button */
+.see-more-button {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-button:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+}
+
+
+/* Notice Dashboard Section */
+.notice-dashboard {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin: 20px 0;
+}
+
+/* Notice Title */
+.notice-dashboard h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Notice Cards Container */
+.notice-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Notice Card Styling */
+.notice-card {
+    width: 280px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Notice Title Styling */
+.notice-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Notice Description Styling */
+.notice-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* "Read More" Button */
+.notice-more {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover effect for "Read More" button */
+.notice-more:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Awards Section */
+.awards-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+.awards-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.awards-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.award-card {
+    width: 280px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.award-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.award-description {
+    font-size: 16px;
+}
+
+
+
+/* Footer*/
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 60px; /* Adds space above the footer */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+.footer-section p, .footer-section a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+/* Quick Links */
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 8px;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+/* About Section */
+.about-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.about-container h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+section {
+    margin-top: 40px;
+}
+
+
+/* Mission Section */
+.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px; /* Adds spacing between text and image */
+}
+
+.mission h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px; /* Adds space below the heading */
+}
+
+.mission p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px; /* Adds spacing below paragraph */
+}
+
+.mission-image {
+    width: 45%;
+    border-radius: 10px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+/* Achievement Cards */
+.achievement-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.card p {
+    color: #777;
+}
+
+/* Testimonials Section */
+.testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.testimonial-card {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Center the Campus Events title */
+.campus-events-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Container for the Campus Events section */
+.campus-events-container {
+    padding: 20px;
+    width: 100%;
+}
+
+/* Faculty */
+.faculty-member {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.faculty-photo {
+    width: 80px;  /* Set smaller width */
+    height: 80px;  /* Set smaller height */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.faculty-member h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.faculty-member p {
+    font-size: 1em;
+}
+/* Style for Award Cards */
+.award-card {
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.award-image {
+    width: 100%;
+    max-width: 200px;  /* Set a max width for uniformity */
+    height: auto;
+    object-fit: contain; /* Ensures the image fits within the container without distortion */
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.award-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.award-description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+/* Admission Cards Container */
+.admission-cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Individual Admission Card Styling */
+.admission-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Admission Card Heading */
+.admission-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* List Styles for Details */
+.admission-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.admission-card li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Apply Now Button Styling */
+.apply-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-now-button:hover {
+    background-color: #0056b3;
+}
+/* Course Table Styles */
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.course-table th, .course-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.course-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.course-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.course-table tr:hover {
+    background-color: #ddd;
+}
+
+/* See More Button Styles */
+.see-more {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.see-more button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.see-more button:hover {
+    background-color: #45a049;
+}
+/* Campus Services Section */
+.campus-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.campus-services-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.campus-services-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.campus-services-text {
+    width: 50%;
+}
+
+.campus-services-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.campus-services-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.campus-services-text ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.campus-services-text ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.see-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1d3a56; /* Darker blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.see-more-button:hover {
+    background-color: #0b2a47; /* Darker shade on hover */
+}
+/* Faculty Section */
+.faculty {
+    padding: 2rem;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.faculty-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faculty-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.faculty-details {
+    text-align: left;
+}
+
+.faculty-details h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.faculty-details p {
+    margin: 0.5rem 0;
+}
+
+.faculty-details ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+    list-style-type: disc;
+}
+
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Portal Title */
+.portal-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Title */
+.card h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Card Description */
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Card Button */
+.card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button Hover Effect */
+.card button:hover {
+    background-color: #0056b3;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+/* Calendar Section */
+.calendar-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Calendar Table */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.calendar-table th {
+    background-color: #e6e6e6;
+    color: #333;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.calendar-table td {
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: right;
+    vertical-align: top;
+}
+
+/* Event Styles */
+.quiz {
+    background-color: #d6f5d6; /* Light Green for Quizzes */
+    border: 2px solid #a4d4a4;
+}
+
+.midterm {
+    background-color: #c3e6c3; /* Medium Green for Midterms */
+    border: 2px solid #84c484;
+}
+
+.final {
+    background-color: #a9d6a9; /* Dark Green for Finals */
+    border: 2px solid #6bb36b;
+}
+
+/* Hover Effect */
+.quiz:hover, .midterm:hover, .final:hover {
+    background-color: #98c298;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Non-Event Dates */
+.calendar-table td:not(.quiz):not(.midterm):not(.final) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .calendar-table td {
+        height: 60px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .calendar-section {
+        padding: 10px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.tuition-calculator, .scholarship-calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#tuition-result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.scholarship-calculator ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scholarship-calculator ul li {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.terms-conditions {
+    background-color: #fff;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* homefinder css codes */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Search Filters Section */
+.search-filters {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.search-filters h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Horizontal Filter Layout */
+.search-filters form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 15px;
+}
+
+.filter-item {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="range"], select {
+    width: 100%;
+}
+
+/* Available Accommodations Section */
+.accommodation-cards {
+    padding: 20px;
+}
+
+.accommodation-cards h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Individual Card */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 22%; /* Reduced card width to fit in a row */
+    text-align: center;
+    transition: transform 0.3s ease; /* Adds smooth hover effect */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background-color: #2980b9;
+}
+
+/* Contact Button */
+.contact {
+    background-color: #2ecc71;
+}
+
+.contact:hover {
+    background-color: #27ae60;
+}
+
+/* Hover Effect on Card */
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect when hovering */
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Stacks cards vertically on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .search-filters form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-item {
+        width: 80%;
+    }
+}
+/* study.html code extended*/
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* General Styling */
+.portal-title {
+    text-align: center;
+}
+
+/* Card Container Styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 10px;
+    text-align: center;
+}
+
+.card button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Trackers Section */
+.tracker-section, .course-tracker, .tuition-tracker {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Credits Tracker Styling */
+.tracker-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+/* Courses Tracker Table Styling */
+.course-tracker table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.course-tracker th, .course-tracker td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.course-tracker th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Tuition Fee Circular Progress */
+.circular-progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 50%, #ccc 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.inner-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+/* Circular Progress Container Styling */
+.circular-progress-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Tuition Fee Circular Progress Styling */
+.circular-progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 50%, #ccc 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Excess Spending Tracker (Red) */
+.red-progress {
+    background: conic-gradient(#e74c3c 100%, #ccc 0%);
+}
+
+.inner-circle, .red-inner-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* Red Inner Circle */
+.red-inner-circle {
+    color: #e74c3c;
+}
+
+/* Excess Amount Styling Outside Circle */
+.excess-amount-text {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Styling the Excess Amount Number in Red */
+.excess-amount {
+    color: red; /* This will make the text red */
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Completed Course Rows */
+.completed {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green text */
+}
+/* Retaken Course Rows */
+.retaken {
+    background-color: #fff3cd; /* Light yellow */
+    color: #856404; /* Dark yellow text */
+}
+/* Style the accommodation cards */
+.card {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.card .reviews {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.card button {
+    padding: 8px 15px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+/* Style the comparison section */
+.comparison-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ccc;
+}
+
+.comparison-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.comparison-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.comparison-card {
+    width: 250px; /* Adjust the size of comparison cards */
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.comparison-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comparison-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.comparison-card strong {
+    font-weight: bold;
+}

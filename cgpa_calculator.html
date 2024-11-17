@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CGPA Calculator</h1>
+
+    <!-- CGPA Calculator Form (Dummy) -->
+    <section class="calculator-section">
+        <h2>Calculate Your CGPA</h2>
+        <form>
+            <div class="form-group">
+                <label for="course1">Course 1 Grade:</label>
+                <input type="text" id="course1" placeholder="e.g., A, B+, C">
+            </div>
+            <div class="form-group">
+                <label for="course2">Course 2 Grade:</label>
+                <input type="text" id="course2" placeholder="e.g., A-, B, C+">
+            </div>
+            <div class="form-group">
+                <label for="course3">Course 3 Grade:</label>
+                <input type="text" id="course3" placeholder="e.g., B+, C, D">
+            </div>
+            <div class="form-group">
+                <label for="course4">Course 4 Grade:</label>
+                <input type="text" id="course4" placeholder="e.g., A, B-, D+">
+            </div>
+            <!-- Dummy button with no calculation -->
+            <button type="button">Calculate CGPA</button>
+        </form>
+        <p id="result">Your CGPA will be displayed here.</p>
+    </section>
+
+    <!-- Grading System Table -->
+    <section class="grading-system">
+        <h2>Uniform Grading System</h2>
+        <div class="grading-tables">
+            <!-- Table for Standard Grades -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Letter Grade</th>
+                        <th>Numerical Equivalence</th>
+                        <th>Explanation/Types of Grades</th>
+                        <th>Grade Point</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>A</td><td>90% and above</td><td>Excellent</td><td>4.00</td></tr>
+                    <tr><td>A-</td><td>85% to less than 90%</td><td>Excellent</td><td>3.70</td></tr>
+                    <tr><td>B+</td><td>80% to less than 85%</td><td>Good</td><td>3.30</td></tr>
+                    <tr><td>B</td><td>75% to less than 80%</td><td>Good</td><td>3.00</td></tr>
+                    <tr><td>B-</td><td>70% to less than 75%</td><td>Good</td><td>2.70</td></tr>
+                    <tr><td>C+</td><td>65% to less than 70%</td><td>Passing</td><td>2.30</td></tr>
+                    <tr><td>C</td><td>60% to less than 65%</td><td>Passing</td><td>2.00</td></tr>
+                    <tr><td>C-</td><td>55% to less than 60%</td><td>Passing</td><td>1.70</td></tr>
+                    <tr><td>D+</td><td>50% to less than 55%</td><td>Deficient Passing</td><td>1.30</td></tr>
+                    <tr><td>D</td><td>45% to less than 50%</td><td>Deficient Passing</td><td>1.00</td></tr>
+                    <tr><td>F</td><td>Less than 45%</td><td>Failing</td><td>0.00</td></tr>
+                </tbody>
+            </table>
+
+            <!-- Table for Special Grades -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Letter Grade</th>
+                        <th>Explanation/Types of Grades</th>
+                        <th>Grade Point</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>I</td><td>Incomplete</td><td>0.00</td></tr>
+                    <tr><td>W</td><td>Withdrawal</td><td>0.00</td></tr>
+                    <tr><td>Y</td><td>Audit</td><td>0.00</td></tr>
+                    <tr><td>O</td><td>Administrative Withdrawal</td><td>0.00</td></tr>
+                    <tr><td>Z</td><td>No Grade Received</td><td>0.00</td></tr>
+                    <tr><td>P</td><td>Pass</td><td>0.00</td></tr>
+                    <tr><td>S</td><td>Satisfactory</td><td>0.00</td></tr>
+                    <tr><td>U</td><td>Unsatisfactory</td><td>0.00</td></tr>
+                    <tr><td>T</td><td>Repeated (Not Allowed)</td><td>0.00</td></tr>
+                    <tr><td>R</td><td>Repeated (Allowed)</td><td>0.00</td></tr>
+                    <tr><td>E</td><td>Examination</td><td>0.00</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

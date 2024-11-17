@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="portal-title">Student Portal</h1>
+
+    <!-- Card Container Section -->
+    <div class="card-container">
+        <!-- CGPA Calculator Card -->
+        <div class="card">
+            <h2>CGPA Calculator</h2>
+            <p>Calculate your CGPA easily with our online tool. Keep track of your academic progress!</p>
+            <button onclick="location.href='cgpa_calculator.html'">Go to CGPA Calculator</button>
+        </div>
+
+        <!-- Calendar Card -->
+        <div class="card">
+            <h2>Personalized Calendar</h2>
+            <p>View important academic dates, exam schedules, and events. Stay up-to-date with your schedule!</p>
+            <button onclick="location.href='calendar.html'">View Calendar</button>
+        </div>
+
+        <!-- Tuition Fees Calculator Card -->
+        <div class="card">
+            <h2>Tuition Fees Calculator</h2>
+            <p>Estimate your tuition fees based on your chosen courses and credit hours.</p>
+            <button onclick="location.href='tuition_calculator.html'">Calculate Tuition Fees</button>
+        </div>
+
+        <!-- Accommodation Finder Card -->
+        <div class="card">
+            <h2>Accommodation Portal</h2>
+            <p>Find your new home. Explore available accommodation options around the campus!</p>
+            <button onclick="location.href='homefinder.html'">Go to Home Finder</button>
+        </div>
+    </div>
+
+    <!-- New Feature Sections -->
+
+    <!-- Credits Tracker Section -->
+    <div class="tracker-section">
+        <h2>Credits Tracker</h2>
+        <div class="tracker-info">
+            <p>Total Credits Required: <span>120</span></p>
+            <p>Credits Completed: <span>80</span></p>
+            <p>Credits Remaining: <span>40</span></p>
+        </div>
+    </div>
+
+    <!-- Courses Tracker Table -->
+    <div class="course-tracker">
+        <h2>Course Progress</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                    <th>Faculty Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Completed Course Row (Green) -->
+                <tr class="completed">
+                    <td>CSE101</td>
+                    <td>Introduction to Computing</td>
+                    <td>A</td>
+                    <td>Dr. Smith</td>
+                    <td>Completed</td>
+                </tr>
+                <tr class="completed">
+                    <td>MAT102</td>
+                    <td>Calculus I</td>
+                    <td>B</td>
+                    <td>Dr. Johnson</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>PHY201</td>
+                    <td>Physics II</td>
+                    <td>-</td>
+                    <td>Prof. Lee</td>
+                    <td>In Progress</td>
+                </tr>
+                <!-- Retaken Course Row (Yellow) -->
+                <tr class="retaken">
+                    <td>MAT102</td>
+                    <td>Calculus I (Retaken)</td>
+                    <td>B+</td>
+                    <td>Dr. Johnson</td>
+                    <td>Retaken</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+    <!-- Tuition Fee Progress Tracker Section -->
+    <div class="tuition-tracker">
+        <h2>Tuition Fee Tracker</h2>
+        <div class="circular-progress">
+            <div class="inner-circle">
+                <p>50%</p>
+                <p>Spent: $20,000</p>
+                <p>Total Fee: $40,000</p>
+            </div>
+        </div>
+       <!-- Excess Spending Tracker -->
+<div class="circular-progress red-progress">
+    <div class="inner-circle red-inner-circle">
+        <p>Excess</p>
+        <p>Spent: $45,000</p>
+        <!-- <p>Total Fee: $40,000</p> -->
+    </div>
+</div>
+<!-- Display Excess Amount Outside the Circle -->
+<p class="excess-amount-text">Excess Amount: <span class="excess-amount">$5,000</span></p>
+
+    </div>
+</body>
+</html>
